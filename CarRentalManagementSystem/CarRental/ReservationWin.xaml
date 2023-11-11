@@ -1,0 +1,34 @@
+﻿<Window x:Class="CarRental.ReservationWin"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CarRental"
+        mc:Ignorable="d"
+        Title="ReservationWin" Height="450" Width="800">
+    <DockPanel LastChildFill="True" Background="#FFCDD1D2">
+        <Grid DockPanel.Dock="Top" Height="Auto" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="100"></ColumnDefinition>
+                <ColumnDefinition Width="1*"></ColumnDefinition>
+                <ColumnDefinition Width="100"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <StackPanel Orientation="Horizontal" Grid.Column="1">
+                <Button Content="Logout" Margin="10" Padding="2" Click="Logout_Click" Width="110" Height="22"/>
+                <Button Content="CarSelect" Margin="10" Padding="2" Click="Button_Click_1" Width="110" Height="22"/>
+                <Button Content="Show Reservation" Margin="10" Padding="2" Click="Button_Click" Width="110" Height="22"/>
+            </StackPanel>
+        </Grid>
+
+        <StackPanel DockPanel.Dock="Bottom" Height="100"  Margin="30,10,30,10" Background="White" >
+            <DataGrid x:Name="carDataGrid"  SelectionChanged="DataGrid_SelectionChanged" />
+        </StackPanel>
+
+        <StackPanel  Margin="30,10,30,10" Background="White" >
+            <DataGrid x:Name="dataGrid"  SelectionChanged="DataGrid_SelectionChanged" />
+        </StackPanel>
+
+
+    </DockPanel>
+
+</Window>

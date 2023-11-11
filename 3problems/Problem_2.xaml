@@ -1,0 +1,17 @@
+﻿<Window x:Class="Lab1_LiFAN_2395027.Problem_2"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab1_LiFAN_2395027"
+        mc:Ignorable="d"
+        Title="Problem_2" Height="450" Width="800">
+    <Grid Background="#FF66769E">
+        <Label Content="Package Weight (kg)" HorizontalAlignment="Left" Height="34" Margin="219,83,0,0" VerticalAlignment="Top" Width="168" FontSize="15" FontWeight="Bold"/>
+        <Label Content="Freight Distance (Miles)" HorizontalAlignment="Left" Height="34" Margin="219,149,0,0" VerticalAlignment="Top" Width="181" FontSize="15" FontWeight="Bold"/>
+        <TextBox x:Name="weight" HorizontalAlignment="Left" Height="34" Margin="400,83,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="122" FontSize="15" FontWeight="Bold"/>
+        <TextBox x:Name="distance" HorizontalAlignment="Left" Height="34" Margin="400,149,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="122" FontSize="15" FontWeight="Bold"/>
+        <Button x:Name="shippingCharge" Content="Calculate Charge" HorizontalAlignment="Left" Height="37" Margin="286,287,0,0" VerticalAlignment="Top" Width="175" FontSize="16" FontWeight="Bold" Click="shippingCharge_Click"/>
+
+    </Grid>
+</Window>

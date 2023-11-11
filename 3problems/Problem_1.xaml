@@ -1,0 +1,18 @@
+﻿<Window x:Class="Lab1_LiFAN_2395027.Problem_1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab1_LiFAN_2395027"
+        mc:Ignorable="d"
+        Title="Problem_1" Height="450" Width="800">
+    <Grid Background="#FF66769E">
+        <Label Content="Account Balance" HorizontalAlignment="Left" Height="36" Margin="170,50,0,0" VerticalAlignment="Top" Width="134" FontSize="15" FontWeight="Bold"/>
+        <Label Content="Checks Number" HorizontalAlignment="Left" Height="36" Margin="170,109,0,0" VerticalAlignment="Top" Width="134" FontSize="15" FontWeight="Bold"/>
+        <TextBox x:Name="bankBalance" HorizontalAlignment="Left" Height="36" Margin="334,50,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="184" FontSize="15" FontWeight="Bold"/>
+        <TextBox x:Name="checkNum" HorizontalAlignment="Left" Height="36" Margin="334,109,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="184" FontSize="15" FontWeight="Bold"/>
+        <Button x:Name="ServiceFee" Content="Service Fee" HorizontalAlignment="Left" Height="36" Margin="188,290,0,0" VerticalAlignment="Top" Width="146" FontSize="16" FontWeight="Bold" Click="Button_Click"/>
+        <Button x:Name="newBalance" Content="New Balance" HorizontalAlignment="Left" Height="36" Margin="506,290,0,0" VerticalAlignment="Top" Width="146" FontSize="16" FontWeight="Bold" Click="Button_Click_1"/>
+
+    </Grid>
+</Window>

@@ -1,0 +1,103 @@
+﻿<Window x:Class="CarRental.CarSelection"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CarRental"
+        mc:Ignorable="d"
+        Title="CarSelection" Height="450" Width="800">
+
+    <DockPanel LastChildFill="True" Background="#FFCDD1D2">
+        <Grid DockPanel.Dock="Top" Height="Auto" >
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"></ColumnDefinition>
+                <ColumnDefinition Width="1*"></ColumnDefinition>
+                <ColumnDefinition Width="100"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <StackPanel Orientation="Horizontal">
+                <Button Content="Reservation" Margin="10" Width="110" Height="22" Click="Button_Click_2"/>
+                <Button Content="Logout" Margin="10" Width="110" Height="22" Click="Logout_Click"/>
+            </StackPanel>
+            
+            
+            
+            <StackPanel Grid.Column="1" Margin="10" Orientation="Horizontal" >
+                <Label x:Name="price" Content="Price:" Margin="5,0,5,0"></Label>
+            </StackPanel>
+        </Grid>
+
+        <StackPanel  Margin="5,0,5,0" Background="#FFF7F4F4">
+            <Label Content="Start time:"></Label>
+            <DatePicker x:Name="startTime"/>
+            
+            
+            <Label Content="End time:" Padding="5"></Label>
+            <DatePicker x:Name="endTime"/>
+
+            <Label Content="Transmission"></Label>
+            <ComboBox x:Name="transmission" Width="120" SelectedIndex="0">
+                <ComboBoxItem Content="any"/>
+                <ComboBoxItem Content="auto"/>
+                <ComboBoxItem Content="manual"/>
+            </ComboBox>
+
+            <Label Content="Fuel Type"></Label>
+            <ComboBox x:Name="fuelType" Width="120" SelectedIndex="0">
+                <ComboBoxItem Content="any"/>
+                <ComboBoxItem Content="gasoline"/>
+                <ComboBoxItem Content="electric"/>
+                <ComboBoxItem Content="hybird"/>
+            </ComboBox>
+
+            <Label Content="Body type"></Label>
+            <ComboBox x:Name="bodyType" Width="120" SelectedIndex="0">
+                <ComboBoxItem Content="any"/>
+                <ComboBoxItem Content="sedan"/>
+                <ComboBoxItem Content="SUV"/>
+            </ComboBox>
+
+            <Button Content="Apply" Click="Button_Click" Margin="0,5,0,5" Background="#FF4ab73b" Foreground="White" BorderBrush="{x:Null}" FontSize="14" Padding="5"/>
+            
+
+        </StackPanel>
+
+
+        <StackPanel DockPanel.Dock="Bottom">
+            <Button Content="Reserve" Margin="5" Background="#FF5aa75b" Padding="5" BorderBrush="{x:Null}" Foreground="White" FontSize="14" FontWeight="Bold" Click="Button_Click_3"/>
+        </StackPanel>
+
+        <StackPanel  Margin="10,0,10,0">
+            <DataGrid x:Name="dataGrid"  SelectionChanged="DataGrid_SelectionChanged" />
+
+        </StackPanel>
+
+
+    </DockPanel>
+
+    <!--<Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/travel.png"/>
+        </Grid.Background>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="49*"/>
+            <RowDefinition Height="355*"/>
+            <RowDefinition Height="30*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="15*"/>
+            <ColumnDefinition Width="695*"/>
+            <ColumnDefinition Width="15*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Car Rental System"   FontSize="24" FontWeight="Bold" Grid.Column="1" Margin="265,0,257,1" />
+        <Rectangle Grid.Column="1" HorizontalAlignment="Left" Height="102" Margin="174,76,0,0" Grid.Row="1" VerticalAlignment="Top" Width="441" Fill="#FFFDFBFB" Stroke="#FFF1C9C9"/>
+        <TextBlock Grid.Column="1" HorizontalAlignment="Left" Margin="174,85,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Text="COLLECT  CITY"/>
+        <TextBox Grid.Column="1" HorizontalAlignment="Left" Margin="267,86,0,0" Grid.Row="1" TextWrapping="Wrap" VerticalAlignment="Top" Width="151" TextChanged="TextBox_TextChanged" Background="#FFFDFBFB"/>
+        <RadioButton x:Name="FilterByBudget" Grid.Column="1" Content="FILTER BY BUDGET" HorizontalAlignment="Left" Margin="174,120,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <RadioButton x:Name="FilterByBudget_Copy" Grid.Column="1" Content="FILTER BY MAKE" HorizontalAlignment="Center" Margin="0,120,0,0" Grid.Row="1" VerticalAlignment="Top"/>
+        <RadioButton x:Name="FilterByBudget_Copy1" Grid.Column="1" Content="FILTER BY SEATS" HorizontalAlignment="Left" Margin="485,120,0,0" Grid.Row="1" VerticalAlignment="Top" Checked="FilterByBudget_Copy1_Checked"/>
+        <Button x:Name="FindCar" Grid.Column="1" Content="FIND CAR" HorizontalAlignment="Left" Height="29" Margin="509,191,0,0" Grid.Row="1" VerticalAlignment="Top" Width="106" Background="#FFD64D0B" IsCancel="True" FontWeight="Bold" FontSize="14" Foreground="White"/>
+
+    </Grid>-->
+</Window>
+
+    

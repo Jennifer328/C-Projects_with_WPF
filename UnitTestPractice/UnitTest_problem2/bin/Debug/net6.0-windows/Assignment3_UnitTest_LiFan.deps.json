@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "Assignment3_UnitTest_LiFan/1.0.0": {
+        "runtime": {
+          "Assignment3_UnitTest_LiFan.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Assignment3_UnitTest_LiFan/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
