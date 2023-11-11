@@ -1,4 +1,4 @@
-# WPF-UnitTest
+# C# Projects with WPF
 
 This repo inclues assignments done in colleges. 
 
